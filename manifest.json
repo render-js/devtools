@@ -1,6 +1,18 @@
 {
   "name": "render-devtools",
   "version": "1.0.0",
-  "dependencies": {
-  }
+  "version_name": "Tomato",
+  "manifest_version": 3,
+  "description": "The devtools for renderJs",
+  "icons": {
+    "48": "icons/48.png"
+  },
+  "devtools_page": "devtools/default_devtools.html",
+  "side_panel": {
+    "default_path": "side/default_sidePanel.html"
+  },
+  "background": {
+    "service_worker": "worker/worker_one.js"
+  },
+  "permissions": ["sidePanel","activeTab","scripting"]
 }
